@@ -99,4 +99,52 @@ class rosalindBiosciToolkit {
         return result
     }
 
+    fun motifLocations(motifPair: Pair<String, String>): List<Int> {
+        // Pair(strand, subs)
+        var motifList = mutableListOf<Int>()
+        val strand = motifPair.first
+        val subs = motifPair.second
+        for (i in 0..strand.length - subs.length) {
+            if (strand.substring(i, i + subs.length).indexOf(subs) == 0) {
+                motifList.add(i + 1)
+            }
+        }
+        return motifList
+    }
+
+    fun uniqMotifs(pairList: List<Pair<String, String>>): List<List<String>> {
+        var uniqMotif = mutableListOf<List<String>>()
+        val compStrand = pairList[0].second
+        for (strandPair in pairList.drop(1)) {
+            var temp_results = mutableListOf<String>()
+            for (x in 0..strandPair.second.length - 1) {
+                for (y in 0..strandPair.second.length - x) {
+                    if (strandPair.second.substring(x, x + y).isNotEmpty() &&
+                        compStrand.contains(strandPair.second.substring(x, x + y)) == true
+                    ) {
+                        temp_results.add(strandPair.second.substring(x, x + y))
+                    }
+                }
+            }
+
+            uniqMotif.add(temp_results.distinct())
+        }
+        return uniqMotif
+    }
+
+    fun largestCommonMotif(motifs: List<List<String>>): List<String> {
+
+        var motLen: Int = 0
+        var motSet: Set<String> = motifs[0].toSet()
+        for (testMotif in 1..motifs.size - 1) {
+            var motSet_new = motifs[testMotif].intersect(motSet)
+            motSet = motSet_new
+        }
+        for (item in motSet) {
+            if (item.length > motLen) {
+                motLen = item.length
+            }
+        }
+        return motSet.filter { it.length == motLen }
+    }
 }
