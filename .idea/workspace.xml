@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f214f3c7-a07b-4ec0-8652-f4fdf0885a1a" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/rosalind">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Worksheet" />
+        <option value="Kotlin File" />
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ZUz9obEsQ5iiuIY26IxIwlQ6sF" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/rosalind" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/Euler" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Kotlin.ResultsKt">
+    <configuration name="ResultsKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <module name="OOM Programming Trials" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="ResultsKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Rosalind Count Nucleotides.ws.kts" type="KotlinStandaloneScriptRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <module name="OOM Programming Trials" />
+      <option name="filePath" value="$PROJECT_DIR$/rosalind/Rosalind Count Nucleotides.ws.kts" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/rosalind" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" value="$PROJECT_DIR$/rosalind/Rosalind Count Nucleotides.ws.kts" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/rosalind" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Rosalind Hamming.ws.kts" type="KotlinStandaloneScriptRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <module name="OOM Programming Trials" />
+      <option name="filePath" value="$PROJECT_DIR$/rosalind/Rosalind Hamming.ws.kts" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/rosalind" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" value="$PROJECT_DIR$/rosalind/Rosalind Hamming.ws.kts" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/rosalind" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Rosalind Motif.ws.kts" type="KotlinStandaloneScriptRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <module name="OOM Programming Trials" />
+      <option name="filePath" value="$PROJECT_DIR$/src/Rosalind Motif.ws.kts" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/src" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" value="$PROJECT_DIR$/src/Rosalind Motif.ws.kts" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/src" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Rosalind Shared Motif.ws.kts" type="KotlinStandaloneScriptRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <module name="OOM Programming Trials" />
+      <option name="filePath" value="$PROJECT_DIR$/src/Rosalind Shared Motif.ws.kts" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/src" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" value="$PROJECT_DIR$/src/Rosalind Shared Motif.ws.kts" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/src" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Kotlin.ResultsKt" />
+        <item itemvalue="Kotlin script.Rosalind Hamming.ws.kts" />
+        <item itemvalue="Kotlin script.Rosalind Count Nucleotides.ws.kts" />
+        <item itemvalue="Kotlin script.Rosalind Shared Motif.ws.kts" />
+        <item itemvalue="Kotlin script.Rosalind Motif.ws.kts" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f214f3c7-a07b-4ec0-8652-f4fdf0885a1a" name="Default Changelist" comment="" />
+      <created>1584908311766</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584908311766</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2746" y="392" width="951" height="674" key="#Project_Structure" timestamp="1585876540076">
+      <screen x="1920" y="0" width="2560" height="1440" />
+    </state>
+    <state x="2746" y="392" width="951" height="674" key="#Project_Structure/1920.0.2560.1440/0.360.1920.1080@1920.0.2560.1440" timestamp="1585876540076" />
+    <state x="2759" y="427" width="602" height="648" key="#Rosalind_Shared_Motif.ws.kts_(1)" timestamp="1585879818489">
+      <screen x="1920" y="0" width="2560" height="1440" />
+    </state>
+    <state x="2759" y="427" width="602" height="648" key="#Rosalind_Shared_Motif.ws.kts_(1)/1920.0.2560.1440/0.360.1920.1080@1920.0.2560.1440" timestamp="1585879818489" />
+    <state x="2778" y="537" width="824" height="385" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585845017577">
+      <screen x="1920" y="0" width="2560" height="1440" />
+    </state>
+    <state x="2778" y="537" width="824" height="385" key="#com.intellij.fileTypes.FileTypeChooser/1920.0.2560.1440/0.360.1920.1080@1920.0.2560.1440" timestamp="1585845017577" />
+    <state x="2834" y="462" width="632" height="535" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1585096848814">
+      <screen x="1920" y="0" width="2560" height="1440" />
+    </state>
+    <state x="2834" y="462" width="632" height="535" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/1920.0.2560.1440/0.360.1920.1080@1920.0.2560.1440" timestamp="1585096848814" />
+    <state x="2929" y="636" width="443" height="187" key="Github.CreateGistDialog" timestamp="1585876673692">
+      <screen x="1920" y="0" width="2560" height="1440" />
+    </state>
+    <state x="2929" y="636" width="443" height="187" key="Github.CreateGistDialog/1920.0.2560.1440/0.360.1920.1080@1920.0.2560.1440" timestamp="1585876673692" />
+    <state width="2045" height="509" key="GridCell.Tab.0.bottom" timestamp="1585943099904">
+      <screen x="1920" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2045" height="509" key="GridCell.Tab.0.bottom/1920.0.2560.1440/0.360.1920.1080@1920.0.2560.1440" timestamp="1585943099904" />
+    <state width="2045" height="509" key="GridCell.Tab.0.center" timestamp="1585943099904">
+      <screen x="1920" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2045" height="509" key="GridCell.Tab.0.center/1920.0.2560.1440/0.360.1920.1080@1920.0.2560.1440" timestamp="1585943099904" />
+    <state width="2045" height="509" key="GridCell.Tab.0.left" timestamp="1585943099904">
+      <screen x="1920" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2045" height="509" key="GridCell.Tab.0.left/1920.0.2560.1440/0.360.1920.1080@1920.0.2560.1440" timestamp="1585943099904" />
+    <state width="2045" height="509" key="GridCell.Tab.0.right" timestamp="1585943099904">
+      <screen x="1920" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2045" height="509" key="GridCell.Tab.0.right/1920.0.2560.1440/0.360.1920.1080@1920.0.2560.1440" timestamp="1585943099904" />
+    <state x="2562" y="527" width="1032" height="842" key="SettingsEditor" timestamp="1585847538800">
+      <screen x="1920" y="0" width="2560" height="1440" />
+    </state>
+    <state x="2562" y="527" width="1032" height="842" key="SettingsEditor/1920.0.2560.1440/0.360.1920.1080@1920.0.2560.1440" timestamp="1585847538800" />
+    <state x="2777" y="461" key="com.intellij.ide.util.TipDialog" timestamp="1585936260816">
+      <screen x="1920" y="0" width="2560" height="1440" />
+    </state>
+    <state x="2777" y="461" key="com.intellij.ide.util.TipDialog/1920.0.2560.1440/0.360.1920.1080@1920.0.2560.1440" timestamp="1585936260816" />
+    <state x="2318" y="458" width="1664" height="542" key="new project wizard" timestamp="1585847814503">
+      <screen x="1920" y="0" width="2560" height="1440" />
+    </state>
+    <state x="2318" y="458" width="1664" height="542" key="new project wizard/1920.0.2560.1440/0.360.1920.1080@1920.0.2560.1440" timestamp="1585847814503" />
+    <state x="2814" y="370" width="672" height="678" key="search.everywhere.popup" timestamp="1585858053096">
+      <screen x="1920" y="0" width="2560" height="1440" />
+    </state>
+    <state x="2814" y="370" width="672" height="678" key="search.everywhere.popup/1920.0.2560.1440/0.360.1920.1080@1920.0.2560.1440" timestamp="1585858053096" />
+    <state x="2871" y="646" width="558" height="167" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1585941608121">
+      <screen x="1920" y="0" width="2560" height="1440" />
+    </state>
+    <state x="2871" y="646" width="558" height="167" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/1920.0.2560.1440/0.360.1920.1080@1920.0.2560.1440" timestamp="1585941608121" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/rosalindBiosciToolkit.kt</url>
+          <line>59</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
