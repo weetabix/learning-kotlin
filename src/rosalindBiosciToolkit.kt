@@ -3,6 +3,8 @@ import java.io.File
 
 class rosalindBiosciToolkit {
 
+    // Resources for the Rosalind Code Exersizes
+
     fun countBases(strand: String): Map<String, Int> {
         val basesMap = mutableMapOf("A" to 0, "C" to 0, "G" to 0, "T" to 0)
         //println(strand.length)
@@ -19,8 +21,8 @@ class rosalindBiosciToolkit {
     }
 
     fun reverseCompliment(strand: String): String {
-        var r_strand = strand.reversed()
-        var result: String = ""
+        val r_strand = strand.reversed()
+        var result = ""
         for (base in 0..r_strand.length - 1) {
             when (r_strand[base].toString()) {
                 "T" -> result += "A"
@@ -60,7 +62,7 @@ class rosalindBiosciToolkit {
                     "C", "G" -> gc_count++
                 }
             }
-            var gc_perc = gc_count.toDouble() / strand.second.length * 100
+            val gc_perc = gc_count.toDouble() / strand.second.length * 100
             if (gc_perc > gc_result.second) {
                 gc_result = Pair(strand.first, gc_perc)
             }
@@ -87,7 +89,7 @@ class rosalindBiosciToolkit {
     }
 
     fun transDnaToRna(strand: String): String {
-        var result: String = ""
+        var result = ""
         for (base in 0..strand.length - 1) {
             when (strand[base].toString()) {
                 "T" -> result += "U"

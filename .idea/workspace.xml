@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f214f3c7-a07b-4ec0-8652-f4fdf0885a1a" name="Default Changelist" comment="" />
+    <list default="true" id="f214f3c7-a07b-4ec0-8652-f4fdf0885a1a" name="Default Changelist" comment="Commit from Intellij.">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rosalindBiosciToolkit.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/rosalindBiosciToolkit.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,6 +37,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1ZUz9obEsQ5iiuIY26IxIwlQ6sF" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -41,6 +48,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -228,6 +236,10 @@
     </task>
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Commit from Intellij." />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit from Intellij." />
+  </component>
   <component name="WindowStateProjectService">
     <state x="2746" y="392" width="951" height="674" key="#Project_Structure" timestamp="1585876540076">
       <screen x="1920" y="0" width="2560" height="1440" />
@@ -245,6 +257,10 @@
       <screen x="1920" y="0" width="2560" height="1440" />
     </state>
     <state x="2834" y="462" width="632" height="535" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/1920.0.2560.1440/0.360.1920.1080@1920.0.2560.1440" timestamp="1585096848814" />
+    <state x="2613" y="350" width="895" height="802" key="CommitChangelistDialog2" timestamp="1585943670845">
+      <screen x="1920" y="0" width="2560" height="1440" />
+    </state>
+    <state x="2613" y="350" width="895" height="802" key="CommitChangelistDialog2/1920.0.2560.1440/0.360.1920.1080@1920.0.2560.1440" timestamp="1585943670845" />
     <state x="2929" y="636" width="443" height="187" key="Github.CreateGistDialog" timestamp="1585876673692">
       <screen x="1920" y="0" width="2560" height="1440" />
     </state>
@@ -269,10 +285,10 @@
       <screen x="1920" y="0" width="2560" height="1440" />
     </state>
     <state x="2562" y="527" width="1032" height="842" key="SettingsEditor/1920.0.2560.1440/0.360.1920.1080@1920.0.2560.1440" timestamp="1585847538800" />
-    <state x="2777" y="461" key="com.intellij.ide.util.TipDialog" timestamp="1585936260816">
+    <state x="2777" y="461" key="com.intellij.ide.util.TipDialog" timestamp="1585943586746">
       <screen x="1920" y="0" width="2560" height="1440" />
     </state>
-    <state x="2777" y="461" key="com.intellij.ide.util.TipDialog/1920.0.2560.1440/0.360.1920.1080@1920.0.2560.1440" timestamp="1585936260816" />
+    <state x="2777" y="461" key="com.intellij.ide.util.TipDialog/1920.0.2560.1440/0.360.1920.1080@1920.0.2560.1440" timestamp="1585943586746" />
     <state x="2318" y="458" width="1664" height="542" key="new project wizard" timestamp="1585847814503">
       <screen x="1920" y="0" width="2560" height="1440" />
     </state>
@@ -291,7 +307,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/rosalindBiosciToolkit.kt</url>
-          <line>59</line>
+          <line>61</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
