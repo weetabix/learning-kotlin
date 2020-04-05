@@ -2,33 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f214f3c7-a07b-4ec0-8652-f4fdf0885a1a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/OOM Programming Trials/Rosalind_ResultsKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOM Programming Trials/META-INF/OOM Programming Trials.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOM Programming Trials/META-INF/OOM Programming Trials.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOM Programming Trials/ResultsKt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOM Programming Trials/Rosalind Motif.ws.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOM Programming Trials/Rosalind Shared Motif.ws.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOM Programming Trials/Rosalind Transcribe DNS RNA.ws.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOM Programming Trials/Rosalind_Motif_ws$Motif.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOM Programming Trials/Rosalind_Motif_ws.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOM Programming Trials/Rosalind_Shared_Motif_ws$sharedMotif.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOM Programming Trials/Rosalind_Shared_Motif_ws.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOM Programming Trials/Rosalind_Transcribe_DNS_RNA_ws$Problem2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOM Programming Trials/Rosalind_Transcribe_DNS_RNA_ws.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOM Programming Trials/Rosalind_ResultsKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOM Programming Trials/Rosalind_ResultsKt.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/OOM Programming Trials/rosalindBiosciToolkit$countBases$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOM Programming Trials/rosalindBiosciToolkit$countBases$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/OOM Programming Trials/rosalindBiosciToolkit$countBases$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOM Programming Trials/rosalindBiosciToolkit$countBases$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/OOM Programming Trials/rosalindBiosciToolkit$countBases$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOM Programming Trials/rosalindBiosciToolkit$countBases$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/OOM Programming Trials/rosalindBiosciToolkit$countBases$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOM Programming Trials/rosalindBiosciToolkit$countBases$4.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/OOM Programming Trials/rosalindBiosciToolkit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOM Programming Trials/rosalindBiosciToolkit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Results.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Rosalind Results.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Rosalind Motif.ws.kts" beforeDir="false" afterPath="$PROJECT_DIR$/rosalind/Rosalind Motif.ws.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Rosalind Shared Motif.ws.kts" beforeDir="false" afterPath="$PROJECT_DIR$/rosalind/Rosalind Shared Motif.ws.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Rosalind Transcribe DNS RNA.ws.kts" beforeDir="false" afterPath="$PROJECT_DIR$/rosalind/Rosalind Transcribe DNS RNA.ws.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Rosalind Results.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Rosalind Results.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/rosalindBiosciToolkit.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/rosalindBiosciToolkit.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testFileGC-Content" beforeDir="false" afterPath="$PROJECT_DIR$/data/testFileGC-Content" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testFileHamming" beforeDir="false" afterPath="$PROJECT_DIR$/data/testFileHamming" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testFileSharedMotif" beforeDir="false" afterPath="$PROJECT_DIR$/data/testFileSharedMotif" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,8 +56,8 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/DiscreteMathToolkit-1.0.3.jar!/" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
@@ -266,18 +249,34 @@
       <option name="project" value="LOCAL" />
       <updated>1585943843425</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Moved everything into a Class.">
+      <created>1585946266891</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1585946266891</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Cleanup of old files.">
+      <created>1585946379909</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1585946379909</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit from Intellij." />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit from Intellij." />
+    <MESSAGE value="Moved everything into a Class." />
+    <MESSAGE value="Cleanup of old files." />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleanup of old files." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2746" y="392" width="951" height="674" key="#Project_Structure" timestamp="1585876540076">
+    <state x="2746" y="392" width="951" height="674" key="#Project_Structure" timestamp="1586112017506">
       <screen x="1920" y="0" width="2560" height="1440" />
     </state>
-    <state x="2746" y="392" width="951" height="674" key="#Project_Structure/1920.0.2560.1440/0.360.1920.1080@1920.0.2560.1440" timestamp="1585876540076" />
+    <state x="2746" y="392" width="951" height="674" key="#Project_Structure/1920.0.2560.1440/0.360.1920.1080@1920.0.2560.1440" timestamp="1586112017506" />
     <state x="2759" y="427" width="602" height="648" key="#Rosalind_Shared_Motif.ws.kts_(1)" timestamp="1585879818489">
       <screen x="1920" y="0" width="2560" height="1440" />
     </state>
@@ -286,50 +285,58 @@
       <screen x="1920" y="0" width="2560" height="1440" />
     </state>
     <state x="2778" y="537" width="824" height="385" key="#com.intellij.fileTypes.FileTypeChooser/1920.0.2560.1440/0.360.1920.1080@1920.0.2560.1440" timestamp="1585845017577" />
+    <state x="2819" y="445" width="696" height="613" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1586122099103">
+      <screen x="1920" y="0" width="2560" height="1440" />
+    </state>
+    <state x="2819" y="445" width="696" height="613" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/1920.0.2560.1440/0.360.1920.1080@1920.0.2560.1440" timestamp="1586122099103" />
     <state x="2834" y="462" width="632" height="535" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1585096848814">
       <screen x="1920" y="0" width="2560" height="1440" />
     </state>
     <state x="2834" y="462" width="632" height="535" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/1920.0.2560.1440/0.360.1920.1080@1920.0.2560.1440" timestamp="1585096848814" />
-    <state x="2613" y="350" width="895" height="802" key="CommitChangelistDialog2" timestamp="1585946266824">
+    <state x="2613" y="350" width="895" height="802" key="CommitChangelistDialog2" timestamp="1585946379853">
       <screen x="1920" y="0" width="2560" height="1440" />
     </state>
-    <state x="2613" y="350" width="895" height="802" key="CommitChangelistDialog2/1920.0.2560.1440/0.360.1920.1080@1920.0.2560.1440" timestamp="1585946266824" />
+    <state x="2613" y="350" width="895" height="802" key="CommitChangelistDialog2/1920.0.2560.1440/0.360.1920.1080@1920.0.2560.1440" timestamp="1585946379853" />
+    <state x="2624" y="692" width="906" height="508" key="FileChooserDialogImpl" timestamp="1586120995463">
+      <screen x="1920" y="0" width="2560" height="1440" />
+    </state>
+    <state x="2624" y="692" width="906" height="508" key="FileChooserDialogImpl/1920.0.2560.1440/0.360.1920.1080@1920.0.2560.1440" timestamp="1586120995463" />
     <state x="2929" y="636" width="443" height="187" key="Github.CreateGistDialog" timestamp="1585876673692">
       <screen x="1920" y="0" width="2560" height="1440" />
     </state>
     <state x="2929" y="636" width="443" height="187" key="Github.CreateGistDialog/1920.0.2560.1440/0.360.1920.1080@1920.0.2560.1440" timestamp="1585876673692" />
-    <state width="2258" height="509" key="GridCell.Tab.0.bottom" timestamp="1585946350308">
+    <state width="2258" height="509" key="GridCell.Tab.0.bottom" timestamp="1586122021020">
       <screen x="1920" y="0" width="2560" height="1440" />
     </state>
-    <state width="2258" height="509" key="GridCell.Tab.0.bottom/1920.0.2560.1440/0.360.1920.1080@1920.0.2560.1440" timestamp="1585946350308" />
-    <state width="2258" height="509" key="GridCell.Tab.0.center" timestamp="1585946350308">
+    <state width="2258" height="509" key="GridCell.Tab.0.bottom/1920.0.2560.1440/0.360.1920.1080@1920.0.2560.1440" timestamp="1586122021020" />
+    <state width="2258" height="509" key="GridCell.Tab.0.center" timestamp="1586122021019">
       <screen x="1920" y="0" width="2560" height="1440" />
     </state>
-    <state width="2258" height="509" key="GridCell.Tab.0.center/1920.0.2560.1440/0.360.1920.1080@1920.0.2560.1440" timestamp="1585946350308" />
-    <state width="2258" height="509" key="GridCell.Tab.0.left" timestamp="1585946350308">
+    <state width="2258" height="509" key="GridCell.Tab.0.center/1920.0.2560.1440/0.360.1920.1080@1920.0.2560.1440" timestamp="1586122021019" />
+    <state width="2258" height="509" key="GridCell.Tab.0.left" timestamp="1586122021019">
       <screen x="1920" y="0" width="2560" height="1440" />
     </state>
-    <state width="2258" height="509" key="GridCell.Tab.0.left/1920.0.2560.1440/0.360.1920.1080@1920.0.2560.1440" timestamp="1585946350308" />
-    <state width="2258" height="509" key="GridCell.Tab.0.right" timestamp="1585946350308">
+    <state width="2258" height="509" key="GridCell.Tab.0.left/1920.0.2560.1440/0.360.1920.1080@1920.0.2560.1440" timestamp="1586122021019" />
+    <state width="2258" height="509" key="GridCell.Tab.0.right" timestamp="1586122021019">
       <screen x="1920" y="0" width="2560" height="1440" />
     </state>
-    <state width="2258" height="509" key="GridCell.Tab.0.right/1920.0.2560.1440/0.360.1920.1080@1920.0.2560.1440" timestamp="1585946350308" />
-    <state x="2562" y="527" width="1032" height="842" key="SettingsEditor" timestamp="1585847538800">
+    <state width="2258" height="509" key="GridCell.Tab.0.right/1920.0.2560.1440/0.360.1920.1080@1920.0.2560.1440" timestamp="1586122021019" />
+    <state x="2562" y="527" width="1032" height="842" key="SettingsEditor" timestamp="1586113225492">
       <screen x="1920" y="0" width="2560" height="1440" />
     </state>
-    <state x="2562" y="527" width="1032" height="842" key="SettingsEditor/1920.0.2560.1440/0.360.1920.1080@1920.0.2560.1440" timestamp="1585847538800" />
-    <state x="2656" y="489" width="808" height="525" key="Vcs.Push.Dialog.v2" timestamp="1585946280866">
+    <state x="2562" y="527" width="1032" height="842" key="SettingsEditor/1920.0.2560.1440/0.360.1920.1080@1920.0.2560.1440" timestamp="1586113225492" />
+    <state x="2656" y="489" width="808" height="525" key="Vcs.Push.Dialog.v2" timestamp="1585946381603">
       <screen x="1920" y="0" width="2560" height="1440" />
     </state>
-    <state x="2656" y="489" width="808" height="525" key="Vcs.Push.Dialog.v2/1920.0.2560.1440/0.360.1920.1080@1920.0.2560.1440" timestamp="1585946280866" />
-    <state x="2777" y="461" key="com.intellij.ide.util.TipDialog" timestamp="1585943586746">
+    <state x="2656" y="489" width="808" height="525" key="Vcs.Push.Dialog.v2/1920.0.2560.1440/0.360.1920.1080@1920.0.2560.1440" timestamp="1585946381603" />
+    <state x="2777" y="461" key="com.intellij.ide.util.TipDialog" timestamp="1586122272819">
       <screen x="1920" y="0" width="2560" height="1440" />
     </state>
-    <state x="2777" y="461" key="com.intellij.ide.util.TipDialog/1920.0.2560.1440/0.360.1920.1080@1920.0.2560.1440" timestamp="1585943586746" />
-    <state x="2318" y="458" width="1664" height="542" key="new project wizard" timestamp="1585847814503">
+    <state x="2777" y="461" key="com.intellij.ide.util.TipDialog/1920.0.2560.1440/0.360.1920.1080@1920.0.2560.1440" timestamp="1586122272819" />
+    <state x="2318" y="458" width="1664" height="542" key="new project wizard" timestamp="1586122303103">
       <screen x="1920" y="0" width="2560" height="1440" />
     </state>
-    <state x="2318" y="458" width="1664" height="542" key="new project wizard/1920.0.2560.1440/0.360.1920.1080@1920.0.2560.1440" timestamp="1585847814503" />
+    <state x="2318" y="458" width="1664" height="542" key="new project wizard/1920.0.2560.1440/0.360.1920.1080@1920.0.2560.1440" timestamp="1586122303103" />
     <state x="2814" y="370" width="672" height="678" key="search.everywhere.popup" timestamp="1585858053096">
       <screen x="1920" y="0" width="2560" height="1440" />
     </state>

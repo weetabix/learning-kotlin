@@ -5,16 +5,20 @@ class rosalindBiosciToolkit {
 
     // Resources for the Rosalind Code Exersizes
 
+    fun file2string(fileName: String):String {
+        val bufferedReader: BufferedReader = File(fileName).bufferedReader()
+        val inputString = bufferedReader.use { it.readText() }
+    }
+
     fun countBases(strand: String): Map<String, Int> {
         val basesMap = mutableMapOf("A" to 0, "C" to 0, "G" to 0, "T" to 0)
-        //println(strand.length)
-        for (base in 0..strand.length - 1) {
-            when (strand[base].toString()) {
+        for (base in strand.chunked(1)) {
+            when (base) {
                 "A" -> basesMap.computeIfPresent("A") { _, v -> v + 1 }
                 "G" -> basesMap.computeIfPresent("G") { _, v -> v + 1 }
                 "C" -> basesMap.computeIfPresent("C") { _, v -> v + 1 }
                 "T" -> basesMap.computeIfPresent("T") { _, v -> v + 1 }
-                else -> println("Glitch " + base + strand[base])
+                else -> println("Glitch " + base)
             }
         }
         return basesMap
@@ -41,6 +45,7 @@ class rosalindBiosciToolkit {
 
         val bufferedReader: BufferedReader = File(fileName).bufferedReader()
         val inputString = bufferedReader.use { it.readText() }
+        //TODO: Replace with generic stringreader
         val samples = inputString.split(">").toTypedArray()
         for (i in samples.indices) {
             strands += (Pair(
@@ -147,4 +152,79 @@ class rosalindBiosciToolkit {
         }
         return motSet.filter { it.length == motLen }
     }
+
+    fun transRna2Protein(strand: String): String {
+        var result = ""
+        for (base in strand.chunked(3)) {
+            when (base) {
+                "UUU" -> result += "F"
+                "CUU" -> result += "L"
+                "AUU" -> result += "I"
+                "GUU" -> result += "V"
+                "UUC" -> result += "F"
+                "CUC" -> result += "L"
+                "AUC" -> result += "I"
+                "GUC" -> result += "V"
+                "UUA" -> result += "L"
+                "CUA" -> result += "L"
+                "AUA" -> result += "I"
+                "GUA" -> result += "V"
+                "UUG" -> result += "L"
+                "CUG" -> result += "L"
+                "AUG" -> result += "M"
+                "GUG" -> result += "V"
+                "UCU" -> result += "S"
+                "CCU" -> result += "P"
+                "ACU" -> result += "T"
+                "GCU" -> result += "A"
+                "UCC" -> result += "S"
+                "CCC" -> result += "P"
+                "ACC" -> result += "T"
+                "GCC" -> result += "A"
+                "UCA" -> result += "S"
+                "CCA" -> result += "P"
+                "ACA" -> result += "T"
+                "GCA" -> result += "A"
+                "UCG" -> result += "S"
+                "CCG" -> result += "P"
+                "ACG" -> result += "T"
+                "GCG" -> result += "A"
+                "UAU" -> result += "Y"
+                "CAU" -> result += "H"
+                "AAU" -> result += "N"
+                "GAU" -> result += "D"
+                "UAC" -> result += "Y"
+                "CAC" -> result += "H"
+                "AAC" -> result += "N"
+                "GAC" -> result += "D"
+                "UAA" -> result += "Stop"
+                "CAA" -> result += "Q"
+                "AAA" -> result += "K"
+                "GAA" -> result += "E"
+                "UAG" -> result += "Stop"
+                "CAG" -> result += "Q"
+                "AAG" -> result += "K"
+                "GAG" -> result += "E"
+                "UGU" -> result += "C"
+                "CGU" -> result += "R"
+                "AGU" -> result += "S"
+                "GGU" -> result += "G"
+                "UGC" -> result += "C"
+                "CGC" -> result += "R"
+                "AGC" -> result += "S"
+                "GGC" -> result += "G"
+                "UGA" -> result += "Stop"
+                "CGA" -> result += "R"
+                "AGA" -> result += "R"
+                "GGA" -> result += "G"
+                "UGG" -> result += "W"
+                "CGG" -> result += "R"
+                "AGG" -> result += "R"
+                "GGG" -> result += "G"
+                else -> result += "---"
+            }
+        }
+        return result
+    }
+
 }
