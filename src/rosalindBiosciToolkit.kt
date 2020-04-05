@@ -8,6 +8,7 @@ class rosalindBiosciToolkit {
     fun file2string(fileName: String):String {
         val bufferedReader: BufferedReader = File(fileName).bufferedReader()
         val inputString = bufferedReader.use { it.readText() }
+        return inputString
     }
 
     fun countBases(strand: String): Map<String, Int> {
