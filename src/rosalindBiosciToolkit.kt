@@ -46,7 +46,7 @@ class rosalindBiosciToolkit {
 
         val bufferedReader: BufferedReader = File(fileName).bufferedReader()
         val inputString = bufferedReader.use { it.readText() }
-        //TODO: Replace with generic stringreader
+        //TODO: Replace with generic stringreader for pairs etc.
         val samples = inputString.split(">").toTypedArray()
         for (i in samples.indices) {
             strands += (Pair(
@@ -55,6 +55,14 @@ class rosalindBiosciToolkit {
             ))
         }
         return strands.filterNot { it == Pair("", "") }
+    }
+
+    fun readHammingPair(fileName: String): Pair<String, String> {
+        val bufferedReader: BufferedReader = File(fileName).bufferedReader()
+        val inputString = bufferedReader.use { it.readText() }
+        val strings = inputString.split("\n").toTypedArray()
+        val outPair = Pair(strings[0], strings[1])
+        return outPair
     }
 
     fun gcContent(strandList: List<Pair<String, String>>): Pair<String, Double> {
@@ -74,14 +82,6 @@ class rosalindBiosciToolkit {
             }
         }
         return gc_result
-    }
-
-    fun readHammingPair(fileName: String): Pair<String, String> {
-        val bufferedReader: BufferedReader = File(fileName).bufferedReader()
-        val inputString = bufferedReader.use { it.readText() }
-        val strings = inputString.split("\n").toTypedArray()
-        val outPair = Pair(strings[0], strings[1])
-        return outPair
     }
 
     fun calculateHammingDistance(stringPair: Pair<String, String>): Int {
@@ -143,6 +143,23 @@ class rosalindBiosciToolkit {
         var motLen: Int = 0
         var motSet: Set<String> = motifs[0].toSet()
         for (testMotif in 1..motifs.size - 1) {
+            var motSet_new = motifs[testMotif].intersect(motSet)
+            motSet = motSet_new
+        }
+        for (item in motSet) {
+            if (item.length > motLen) {
+                motLen = item.length
+            }
+        }
+        return motSet.filter { it.length == motLen }
+    }
+
+    fun coLargestCommonMotif(motifs: List<List<String>>): List<String> {
+
+        var motLen: Int = 0
+        var motSet: Set<String> = motifs[0].toSet()
+        for (testMotif in 1..motifs.size - 1) {
+
             var motSet_new = motifs[testMotif].intersect(motSet)
             motSet = motSet_new
         }
@@ -227,5 +244,9 @@ class rosalindBiosciToolkit {
         }
         return result
     }
+
+//    fun findProteinMotif(): List<Int> {
+
+//    }
 
 }

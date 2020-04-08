@@ -1,6 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="rosalind-jvm">
-    <output-path>$PROJECT_DIR$/rosalind/build/libs</output-path>
-    <root id="archive" name="rosalind-jvm.jar" />
-  </artifact>
-</component>
