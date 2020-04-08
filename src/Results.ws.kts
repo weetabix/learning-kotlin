@@ -36,14 +36,14 @@ fun rosalindDNACompliment() {
 }
 
 fun rosalindGCContent() {
-    val strands = rbt.stripFASTA("data/testFileGC-Content")
+    val strands = rbt.stripFASTA("../data/testFileGC-Content")
     println()
     print("Rosalind GC Content: ")
     println(rbt.gcContent(strands))
 }
 
 fun rosalindHammingDistance() {
-    val pairs = rbt.readHammingPair("data/testFileHamming")
+    val pairs = rbt.readHammingPair("../data/testFileHamming")
     println()
     print("Rosalind Hamming Distance: ")
     println(rbt.calculateHammingDistance(pairs))
@@ -64,7 +64,7 @@ fun rosalindMotifLocations() {
 fun rosalindSharedMotifs() {
     println()
     print("Rosalind Shared Motifs: ")
-    val foo = rbt.stripFASTA("data/testFileSharedMotif")
+    val foo = rbt.stripFASTA("../data/testFileSharedMotif")
     val bar = rbt.uniqMotifs(foo)
     println(rbt.largestCommonMotif(bar))
 }
@@ -88,14 +88,12 @@ fun rosalindTranscribeRNAToProtein() {
 
 }
 
-fun main() {
-    rosalindCountNucleotides()
-    rosalindDNACompliment()
-    rosalindGCContent()
-    rosalindHammingDistance()
-    rosalindTranscribeDNAToRNA()
-    rosalindMotifLocations()
-    rosalindSharedMotifs()
-    rosalindPermutations(5)
-    rosalindTranscribeRNAToProtein()
-}
+rosalindCountNucleotides()
+rosalindDNACompliment()
+rosalindGCContent()
+rosalindHammingDistance()
+rosalindTranscribeDNAToRNA()
+rosalindMotifLocations()
+rosalindSharedMotifs()
+rosalindPermutations(5)
+rosalindTranscribeRNAToProtein()

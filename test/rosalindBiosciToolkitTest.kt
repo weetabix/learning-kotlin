@@ -6,14 +6,15 @@ internal class rosalindBiosciToolkitTest {
 
     @Test
     fun file2string() {
-        assertEquals(1,1)
-        print("Foo")
     }
 
     @Test
     fun countBases() {
-        assertEquals(2,1+1)
-        print("Bar")
+        val ans = rosalindBiosciToolkit().countBases("ACGT")
+        assertEquals(ans["A"], 1)
+        assertEquals(ans["C"], 1)
+        assertEquals(ans["G"], 1)
+        assertEquals(ans["T"], 1)
     }
 
     @Test
@@ -58,9 +59,5 @@ internal class rosalindBiosciToolkitTest {
 
     @Test
     fun transRna2Protein() {
-    }
-
-    @Test
-    fun findProteinMotif() {
     }
 }

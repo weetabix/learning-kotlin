@@ -46,7 +46,6 @@ class rosalindBiosciToolkit {
 
         val bufferedReader: BufferedReader = File(fileName).bufferedReader()
         val inputString = bufferedReader.use { it.readText() }
-        //TODO: Replace with generic stringreader for pairs etc.
         val samples = inputString.split(">").toTypedArray()
         for (i in samples.indices) {
             strands += (Pair(
