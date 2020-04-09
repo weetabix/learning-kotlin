@@ -1,14 +1,44 @@
 import java.io.BufferedReader
 import java.io.File
+import java.net.URL
 
 class rosalindBiosciToolkit {
 
     // Resources for the Rosalind Code Exersizes
 
+    fun url2string(fileUrl: String): String {
+        val inputString = URL(fileUrl).readText()
+        return inputString
+    }
+
     fun file2string(fileName: String):String {
         val bufferedReader: BufferedReader = File(fileName).bufferedReader()
-        val inputString = bufferedReader.use { it.readText() }
-        return inputString
+        val outString = bufferedReader.use { it.readText() }
+        return outString    // TODO <------------------------------ This passes to the read hamming and strip fasta functions
+    }
+
+    fun stripFASTA(inString: String): List<Pair<String, String>> {
+
+        var strands = listOf<Pair<String, String>>()
+
+//        val bufferedReader: BufferedReader = File(fileName).bufferedReader()
+//        val inputString = bufferedReader.use { it.readText() }                             // TODO     <-----------String Replacement here
+        val samples = inString.split(">").toTypedArray()
+        for (i in samples.indices) {
+            strands += (Pair(
+                samples[i].split("\n").toTypedArray()[0],
+                samples[i].split("\n").toTypedArray().drop(1).joinToString(separator = "")
+            ))
+        }
+        return strands.filterNot { it == Pair("", "") }
+    }
+
+    fun readHammingPair(fileName: String): Pair<String, String> {
+        val bufferedReader: BufferedReader = File(fileName).bufferedReader()
+        val inputString = bufferedReader.use { it.readText() } // TODO <-----------------------------------------------------------------------Here
+        val strings = inputString.split("\n").toTypedArray()
+        val outPair = Pair(strings[0], strings[1])
+        return outPair
     }
 
     fun countBases(strand: String): Map<String, Int> {
@@ -38,30 +68,6 @@ class rosalindBiosciToolkit {
             }
         }
         return result
-    }
-
-    fun stripFASTA(fileName: String): List<Pair<String, String>> {
-
-        var strands = listOf<Pair<String, String>>()
-
-        val bufferedReader: BufferedReader = File(fileName).bufferedReader()
-        val inputString = bufferedReader.use { it.readText() }
-        val samples = inputString.split(">").toTypedArray()
-        for (i in samples.indices) {
-            strands += (Pair(
-                samples[i].split("\n").toTypedArray()[0],
-                samples[i].split("\n").toTypedArray().drop(1).joinToString(separator = "")
-            ))
-        }
-        return strands.filterNot { it == Pair("", "") }
-    }
-
-    fun readHammingPair(fileName: String): Pair<String, String> {
-        val bufferedReader: BufferedReader = File(fileName).bufferedReader()
-        val inputString = bufferedReader.use { it.readText() }
-        val strings = inputString.split("\n").toTypedArray()
-        val outPair = Pair(strings[0], strings[1])
-        return outPair
     }
 
     fun gcContent(strandList: List<Pair<String, String>>): Pair<String, Double> {
@@ -244,7 +250,18 @@ class rosalindBiosciToolkit {
         return result
     }
 
-//    fun findProteinMotif(): List<Int> {
+    fun proteinMotifLocations(inUrl: String): List<Int> {
+        val strandList: List<Pair<String, String>> = stripFASTA(url2string(inUrl))
+        var locList: List<Int> = mutableListOf()
+        for (strand in strandList) {
+            val regex = "N[^P][ST][^P]".toRegex()
+            val results = regex.findAll(strand.second)
+            for (x in results) {
+                locList += x.range.start + 1
+            }
+        }
+        return locList
+    }
 
 //    }
 

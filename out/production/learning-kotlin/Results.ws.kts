@@ -1,5 +1,6 @@
 import com.marcinmoskala.math.permutations
 import com.marcinmoskala.math.permutationsNumber
+//import java.net.URL
 
 val rbt = rosalindBiosciToolkit()
 
@@ -88,12 +89,22 @@ fun rosalindTranscribeRNAToProtein() {
 
 }
 
+fun rosalindProteinMotifs(inputUrl: String) {
+    println()
+    print("Rosalind Protein Motif Locations: ")
+    for (x in rbt.proteinMotifLocations(inputUrl)) {
+        print("${x} ")
+    }
+}
+
 rosalindCountNucleotides()
 rosalindDNACompliment()
 rosalindGCContent()
 rosalindHammingDistance()
 rosalindTranscribeDNAToRNA()
 rosalindMotifLocations()
-rosalindSharedMotifs()
+//rosalindSharedMotifs()
 rosalindPermutations(5)
 rosalindTranscribeRNAToProtein()
+rosalindProteinMotifs("https://www.uniprot.org/uniprot/P07204_TRBM_HUMAN.fasta")
+
