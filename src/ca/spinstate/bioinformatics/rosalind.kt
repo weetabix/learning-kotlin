@@ -1,28 +1,34 @@
+package ca.spinstate.bioinformatics
+
 import java.io.BufferedReader
 import java.io.File
 import java.net.URL
 
-class RosalindBiosciToolkit {
+class Rosalind() {
 
     // Resources for the Rosalind Code Exersizes
 
-    fun url2string(fileUrl: String): String {
-        val inputString = URL(fileUrl).readText()
-        return inputString
+    internal fun uniprotGetString(protID: String): String {
+        val outString = URL("https", "www.uniprot.org", "/uniprot/$protID.fasta").readText()
+        return outString
     }
 
-    fun file2string(fileName: String):String {
+    internal fun fileGetString(fileName: String): String {
         val bufferedReader: BufferedReader = File(fileName).bufferedReader()
         val outString = bufferedReader.use { it.readText() }
-        return outString    // TODO <------------------------------ This passes to the read hamming and strip fasta functions
+        return outString
+    }
+
+    internal fun seqMotifToRegex(inputMotif: String): Regex {
+        val foo = inputMotif.replace("\\{".toRegex(), "[^")
+        val bar = foo.replace("\\}".toRegex(), "]")
+        val expr = "${bar.substring(0, 1)}(?=${bar.removeRange(0, 1)})"
+        print("$expr ")
+        return expr.toRegex()
     }
 
     fun stripFASTA(inString: String): List<Pair<String, String>> {
-
         var strands = listOf<Pair<String, String>>()
-
-//        val bufferedReader: BufferedReader = File(fileName).bufferedReader()
-//        val inputString = bufferedReader.use { it.readText() }                             // TODO     <-----------String Replacement here
         val samples = inString.split(">").toTypedArray()
         for (i in samples.indices) {
             strands += (Pair(
@@ -35,7 +41,8 @@ class RosalindBiosciToolkit {
 
     fun readHammingPair(fileName: String): Pair<String, String> {
         val bufferedReader: BufferedReader = File(fileName).bufferedReader()
-        val inputString = bufferedReader.use { it.readText() } // TODO <-----------------------------------------------------------------------Here
+        val inputString =
+            bufferedReader.use { it.readText() } // TODO <-----------------------------------------------------------------------Here
         val strings = inputString.split("\n").toTypedArray()
         val outPair = Pair(strings[0], strings[1])
         return outPair
@@ -72,7 +79,6 @@ class RosalindBiosciToolkit {
 
     fun gcContent(strandList: List<Pair<String, String>>): Pair<String, Double> {
         var gc_result = Pair("None", 0.0)
-
         for (strand in strandList) {
             var gc_count = 0
 
@@ -90,13 +96,12 @@ class RosalindBiosciToolkit {
     }
 
     fun calculateHammingDistance(stringPair: Pair<String, String>): Int {
-        var hamm_count = 0
-
+        var hammCount = 0
         for (b in 0..stringPair.first.length - 1) {
             if (stringPair.first[b] != stringPair.second[b])
-                hamm_count++
+                hammCount++
         }
-        return hamm_count
+        return hammCount
     }
 
     fun transDnaToRna(strand: String): String {
@@ -112,15 +117,17 @@ class RosalindBiosciToolkit {
 
     fun motifLocations(motifPair: Pair<String, String>): List<Int> {
         // Pair(strand, subs)
-        var motifList = mutableListOf<Int>()
+        var locList: List<Int> = mutableListOf()
         val strand = motifPair.first
         val subs = motifPair.second
-        for (i in 0..strand.length - subs.length) {
-            if (strand.substring(i, i + subs.length).indexOf(subs) == 0) {
-                motifList.add(i + 1)
-            }
+        val expr = "${subs.substring(0, 1)}(?=${subs.removeRange(0, 1)})"
+        print("$expr ")
+        val regex = expr.toRegex()
+        val results = regex.findAll(strand)
+        for (x in results) {
+            locList = locList + (x.range.start + 1)
         }
-        return motifList
+        return locList
     }
 
     fun uniqMotifs(pairList: List<Pair<String, String>>): List<List<String>> {
@@ -137,7 +144,6 @@ class RosalindBiosciToolkit {
                     }
                 }
             }
-
             uniqMotif.add(temp_results.distinct())
         }
         return uniqMotif
@@ -165,8 +171,8 @@ class RosalindBiosciToolkit {
         var motSet: Set<String> = motifs[0].toSet()
         for (testMotif in 1..motifs.size - 1) {
 
-            var motSet_new = motifs[testMotif].intersect(motSet)
-            motSet = motSet_new
+            val motSetNew = motifs[testMotif].intersect(motSet)
+            motSet = motSetNew
         }
         for (item in motSet) {
             if (item.length > motLen) {
@@ -180,89 +186,49 @@ class RosalindBiosciToolkit {
         var result = ""
         for (base in strand.chunked(3)) {
             when (base) {
-                "UUU" -> result += "F"
-                "CUU" -> result += "L"
-                "AUU" -> result += "I"
-                "GUU" -> result += "V"
-                "UUC" -> result += "F"
-                "CUC" -> result += "L"
-                "AUC" -> result += "I"
-                "GUC" -> result += "V"
-                "UUA" -> result += "L"
-                "CUA" -> result += "L"
-                "AUA" -> result += "I"
-                "GUA" -> result += "V"
-                "UUG" -> result += "L"
-                "CUG" -> result += "L"
+                "UUA", "CUA", "UUG", "CUG", "CUU", "CUC" -> result += "L"
+                "CGU", "CGC", "CGA", "AGA", "CGG", "AGG" -> result += "R"
+                "UCU", "UCC", "UCA", "UCG", "AGU", "AGC" -> result += "S"
+                "GUA", "GUU", "GUC", "GUG" -> result += "V"
+                "ACG", "ACA", "ACU", "ACC" -> result += "T"
+                "CCG", "CCA", "CCC", "CCU" -> result += "P"
+                "GCU", "GCC", "GCA", "GCG" -> result += "A"
+                "GGG", "GGA", "GGC", "GGU" -> result += "G"
+                "AUC", "AUU", "AUA" -> result += "I"
+                "UAA", "UAG", "UGA" -> result += "Stop"
+                "UUC", "UUU" -> result += "F"
+                "UAU", "UAC" -> result += "Y"
+                "CAC", "CAU" -> result += "H"
+                "AAC", "AAU" -> result += "N"
+                "GAU", "GAC" -> result += "D"
+                "AAA", "AAG" -> result += "K"
+                "GAG", "GAA" -> result += "E"
+                "CAG", "CAA" -> result += "Q"
+                "UGC", "UGU" -> result += "C"
                 "AUG" -> result += "M"
-                "GUG" -> result += "V"
-                "UCU" -> result += "S"
-                "CCU" -> result += "P"
-                "ACU" -> result += "T"
-                "GCU" -> result += "A"
-                "UCC" -> result += "S"
-                "CCC" -> result += "P"
-                "ACC" -> result += "T"
-                "GCC" -> result += "A"
-                "UCA" -> result += "S"
-                "CCA" -> result += "P"
-                "ACA" -> result += "T"
-                "GCA" -> result += "A"
-                "UCG" -> result += "S"
-                "CCG" -> result += "P"
-                "ACG" -> result += "T"
-                "GCG" -> result += "A"
-                "UAU" -> result += "Y"
-                "CAU" -> result += "H"
-                "AAU" -> result += "N"
-                "GAU" -> result += "D"
-                "UAC" -> result += "Y"
-                "CAC" -> result += "H"
-                "AAC" -> result += "N"
-                "GAC" -> result += "D"
-                "UAA" -> result += "Stop"
-                "CAA" -> result += "Q"
-                "AAA" -> result += "K"
-                "GAA" -> result += "E"
-                "UAG" -> result += "Stop"
-                "CAG" -> result += "Q"
-                "AAG" -> result += "K"
-                "GAG" -> result += "E"
-                "UGU" -> result += "C"
-                "CGU" -> result += "R"
-                "AGU" -> result += "S"
-                "GGU" -> result += "G"
-                "UGC" -> result += "C"
-                "CGC" -> result += "R"
-                "AGC" -> result += "S"
-                "GGC" -> result += "G"
-                "UGA" -> result += "Stop"
-                "CGA" -> result += "R"
-                "AGA" -> result += "R"
-                "GGA" -> result += "G"
                 "UGG" -> result += "W"
-                "CGG" -> result += "R"
-                "AGG" -> result += "R"
-                "GGG" -> result += "G"
                 else -> result += "---"
             }
         }
         return result
     }
 
-    fun proteinMotifLocations(inUrl: String): List<Int> {
-        val strandList: List<Pair<String, String>> = stripFASTA(url2string(inUrl))
-        var locList: List<Int> = mutableListOf()
-        for (strand in strandList) {
-            val regex = "N[^P][ST][^P]".toRegex()
-            val results = regex.findAll(strand.second)
-            for (x in results) {
-                locList += x.range.start + 1
+    fun proteinMotifLocations(inUrlIDs: String): List<Pair<String, List<Int>>> {                 //List<Int> {
+        var pMotifLoc: MutableList<Pair<String, List<Int>>> = mutableListOf()
+        val regex = "N(?=([^P][ST][^P]))".toRegex()
+        for (url: String in inUrlIDs.split(" ")) {
+            val strands = stripFASTA(uniprotGetString(url))
+            for (strand in strands) {
+                var locList: MutableList<Int> = mutableListOf<Int>()
+                val results = regex.findAll(strand.second)
+                for (x in results) {
+                        locList.add(x.range.start + 1)
+                }
+                if (locList.isNotEmpty()) {
+                    pMotifLoc.add(Pair(url, locList))
+                }
             }
         }
-        return locList
+        return pMotifLoc
     }
-
-//    }
 }
-

@@ -1,9 +1,8 @@
 import com.marcinmoskala.math.permutations
 import com.marcinmoskala.math.permutationsNumber
+import ca.spinstate.bioinformatics.Rosalind
 
-//import java.net.URL
-
-val rbt = RosalindBiosciToolkit()
+val rbt = Rosalind()
 
 val dna = "TGATGTGACGGGTTCGCAGGTGCCCTGTGATTAGAGTAATGAACTTCGTCCTAGCGTAAAAGTGCTCCGGCACATAGAT" +
         "TGCTTTCCCGGGATATATATGCATGTAGGAGATGTTTCCTCATGCTTCCGGTAGGCTAGTCCTACCTCATTAGTCCACTTA" +
@@ -60,13 +59,15 @@ fun rosalindTranscribeDNAToRNA() {
 fun rosalindMotifLocations() {
     println()
     print("Rosalind Motif Locations: ")
-    println(rbt.motifLocations(motifPair))
+    for (x in rbt.motifLocations(motifPair))
+        print("$x ")
 }
 
 fun rosalindSharedMotifs() {
     println()
     print("Rosalind Shared Motifs: ")
     val foo = rbt.stripFASTA("../data/testFileSharedMotif")
+    //TODO  Swap over to use fileGetString()
     val bar = rbt.uniqMotifs(foo)
     println(rbt.largestCommonMotif(bar))
 }
@@ -77,7 +78,7 @@ fun rosalindPermutations(num: Int) {
     println((1..num).toList().permutationsNumber())
     for (x in (1..num).toList().permutations()) {
         for (perm in x) {
-            print(perm.toString() + " ")
+            print("$perm ")
         }
         println()
     }
@@ -92,9 +93,13 @@ fun rosalindTranscribeRNAToProtein() {
 
 fun rosalindProteinMotifs(inputUrl: String) {
     println()
-    print("Rosalind Protein Motif Locations: ")
-    for (x in rbt.proteinMotifLocations(inputUrl)) {
-        print("${x} ")
+    println("Rosalind Protein Motif Locations: ")
+    for (pair in rbt.proteinMotifLocations(inputUrl)) {
+        println(pair.first)
+        for (value in pair.second) {
+            print("$value ")
+        }
+        println()
     }
 }
 
@@ -107,4 +112,4 @@ rosalindMotifLocations()
 //rosalindSharedMotifs()
 rosalindPermutations(5)
 rosalindTranscribeRNAToProtein()
-rosalindProteinMotifs("https://www.uniprot.org/uniprot/P07204_TRBM_HUMAN.fasta")
+rosalindProteinMotifs("A2Z669 B5ZC00 P07204_TRBM_HUMAN P20840_SAG1_YEAST")
