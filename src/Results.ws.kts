@@ -103,13 +103,14 @@ fun rosalindProteinMotifs(inputUrl: String) {
     }
 }
 
-rosalindCountNucleotides()
-rosalindDNACompliment()
-rosalindGCContent()
-rosalindHammingDistance()
-rosalindTranscribeDNAToRNA()
-rosalindMotifLocations()
+//rosalindCountNucleotides()
+//rosalindDNACompliment()
+//rosalindGCContent()
+//rosalindHammingDistance()
+//rosalindTranscribeDNAToRNA()
+//rosalindMotifLocations()
 //rosalindSharedMotifs()
-rosalindPermutations(5)
-rosalindTranscribeRNAToProtein()
-rosalindProteinMotifs("A2Z669 B5ZC00 P07204_TRBM_HUMAN P20840_SAG1_YEAST")
+//rosalindPermutations(5)
+//rosalindTranscribeRNAToProtein()
+//rosalindProteinMotifs("A2Z669 B5ZC00 P07204_TRBM_HUMAN P20840_SAG1_YEAST")
+rosalindProteinMotifs("B4R8K2 P08318_P100_HCMVA C0QUK8 P04233_HG2A_HUMAN Q5WFN0 Q05557 P10493_NIDO_MOUSE A3N0C7 Q8PV50 Q8R1Y2 P42098_ZP3_PIG P01044_KNH1_BOVIN Q1JLH6 O08537_ESR2_MOUSE P22457_FA7_BOVIN")
