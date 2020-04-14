@@ -166,7 +166,7 @@ class Rosalind() {
     }
 
     fun coLargestCommonMotif(motifs: List<List<String>>): List<String> {
-
+// TODO Coroutine
         var motLen: Int = 0
         var motSet: Set<String> = motifs[0].toSet()
         for (testMotif in 1..motifs.size - 1) {
